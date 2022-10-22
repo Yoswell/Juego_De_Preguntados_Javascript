@@ -1,0 +1,84 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Responsive.css">
+</head>
+<body>
+    <section class="container" id="container">
+        <header class="header">
+            <div class="contain">
+              <div class="btn-menu">
+                  <label class="button" id="button" for="btn-menu" onclick="remove();">☰</label>
+              </div>
+            </div>
+        </header>
+        <input type="checkbox" id="btn-menu" class="menu">
+          <div class="container-menu">
+            <div class="cont-menu" id="cont-menu">
+              <div class="l-navbar" id="nav-bar">
+                <nav class="nav">
+                  <div class="nav__list">
+                      <button href="#" class="nav__link ciencias" id="ciencias" onclick="ciencia();">
+                        <span class="nav__name">Ciencias</span>
+                        <img src="ciencias.png" alt="">
+                      </button>
+                      <button href="#" class="nav__link estudios" id="estudios" onclick="estudios();">
+                        <span class="nav__name">Estudios</span>
+                        <img src="estudios.png" alt="">
+                      </button>
+                      <a href="#" class="nav__link deportes" id="deportes" onclick="deportes();">
+                        <span class="nav__name">Deportes</span>
+                        <img src="matematicas.png" alt="">
+                      </a>
+                      <a href="#" class="nav__link culturaGeneral" id="cultura" onclick="cultura();">
+                        <span class="nav__name">Cultura</span>
+                        <img src="culturaGeneral.png" alt="">
+                      </a>
+                    </div>
+                    <div class="informacion">
+                      <h1>APRENDE A JUGAR <br>¡Bienvenido!</h1>
+                      <img src="ciencias.png" alt="">
+                      <div class="conInformacion">
+                        <p>Hola, bienvenido al juego de preguntados en esta parte tendras que elegir una de cuatro secciónes
+                        para poder comenzar con el juego, por cada sección te toparas con 11 preguntas diferentes que contienen
+                        una sola respuesta, las categorias son: Deportes, Cultura, Estudios y Ciencia. <br><br> Dentro del juego
+                        habra un contador de puntajes que se incrementara conforme aciertes tus respuestas y si las fallas, este
+                        no se movera.
+                        </p>
+                      </div>
+                    </div>
+                 </nav>
+              </div>
+            </div>
+          </div>
+          <div class="titulin">
+            <h1 id="conPregunta">PREGUNTADOS</h1>
+          </div>
+          <div class="contenido-seccion">
+            <div id="imagenes">
+              <img class="cien" src="ciencias.png" alt="">
+              <img class="estu" src="estudios.png" alt="">
+              <img class="mate" src="matematicas.png" alt="">
+           </div>
+            <div class="bienvenbida"></div>
+            <div class="section-button">
+              <button class="btn" id="conButton" onclick="remover();">Siguiente</h1>
+            </div>
+            <div class="section-opciones" id="seccion-opciones">
+              <button class="btn opcion1" id="op1" onclick="fallarUno();">
+                <strong>Respuesta 1</strong>
+              <button class="btn opcion2" id="op2" onclick="acertar();">
+                <strong>Respuesta 2</strong>
+              <button class="btn opcion3" id="op3" onclick="fallarDos();">
+                <strong>Respuesta 3</strong>
+          </div>
+        </div>
+        <div class="contPuntos"><h1 class="puntos">Puntos<span id="puntos"> 0</span></h1></div>
+    </section>
+</body>
+    <script src="Index.js"></script>
+</html>
