@@ -1,5 +1,3 @@
-
-
 let max = 10;
 let conOPUno, conOPDos, conPreguntas, contador = 0;
 let op1 = document.getElementById('op1');
@@ -17,6 +15,7 @@ function ciencia() {
         conButton.style.display = 'block';
         imagenes.style.display = 'none';
         opciones.style.display = 'block';
+        document.getElementById('contPuntos').style.display = 'block';
         document.getElementById('container').style.backgroundColor = '#119e80'
         op1.style.backgroundColor = '#119e80', op2.style.backgroundColor = '#119e80', op3.style.backgroundColor = '#119e80';
         op1.style.border = '#119e80', op2.style.border = '#119e80', op3.style.border = '#119e80';
@@ -70,6 +69,7 @@ function estudios() {
         conButton.style.display = 'block';
         imagenes.style.display = 'none';
         opciones.style.display = 'block';
+        document.getElementById('contPuntos').style.display = 'block';
         document.getElementById('container').style.backgroundColor = '#1f70b3'
         op1.style.backgroundColor = '#1f70b3', op2.style.backgroundColor = '#1f70b3', op3.style.backgroundColor = '#1f70b3';
         op1.style.border = '#1f70b3', op2.style.border = '#1f70b3', op3.style.border = '#1f70b3';
@@ -124,6 +124,7 @@ function deportes() {
         conButton.style.display = 'block';
         imagenes.style.display = 'none';
         opciones.style.display = 'block';
+        document.getElementById('contPuntos').style.display = 'block';
         document.getElementById('container').style.backgroundColor = '#a38021';
         op1.style.backgroundColor = '#a38021', op2.style.backgroundColor = '#a38021', op3.style.backgroundColor = '#a38021';
         op1.style.border = '#a38021', op2.style.border = '#a38021', op3.style.border = '#a38021';
@@ -178,6 +179,7 @@ function cultura() {
         conButton.style.display = 'block';
         imagenes.style.display = 'none';
         opciones.style.display = 'block';
+        document.getElementById('contPuntos').style.display = 'block';
         document.getElementById('container').style.backgroundColor = '#ac4c33'
         op1.style.backgroundColor = '#ac4c33', op2.style.backgroundColor = '#ac4c33', op3.style.backgroundColor = '#ac4c33';
         op1.style.border = '#ac4c33', op2.style.border = '#ac4c33', op3.style.border = '#ac4c33';
@@ -226,7 +228,7 @@ function cultura() {
 
 op1.addEventListener('click', fallar,  true);
 op2.addEventListener('click', acertar, true);
-op2.addEventListener('click', acertar, true);
+op2.addEventListener('click', fallar, true);
 
 function fallarUno() {
     if (op1.onclick) {
