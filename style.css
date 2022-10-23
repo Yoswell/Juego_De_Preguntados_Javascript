@@ -87,11 +87,13 @@ body {
 }
 
 .contPuntos {
+    padding: 2px;
     background-color: #1c1c1c;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 180px;
+    display: none;
 }
 
 .section-button button {
