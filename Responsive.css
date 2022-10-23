@@ -70,3 +70,72 @@
         margin-left: 10px;
     }
 }
+
+@media (max-width: 360px) {
+    * {
+        font-size: 1rem;
+    }
+    .container {
+        height: 65%;
+        z-index: 0;
+    }
+    .container-menu {
+        z-index: 0;
+    }
+    .titulin {
+        height: 80px;
+        margin-top: -600px;
+        z-index: 0;
+    }
+    .contenido-seccion #imagenes .cien {
+        margin-top: 200px;
+        width: 200px;
+    }
+    .l-navbar {
+        height: 100%;
+    }
+    .nav__list {
+        margin-top: 100px;
+        margin-left: -30px;
+        z-index: 0;
+    }
+    .nav__link {
+        width: 246px;
+        height: 80px;
+        margin: 30px;
+        border-radius: 0;
+        z-index: 0;
+    }
+    #ciencias img {
+        width: 90px;
+        margin-left: 10px;
+    }
+    #estudios img {
+        width: 70px;
+        margin-left: 15px;
+    }
+    #deportes img {
+        width: 90px;
+        margin-left: 15px;
+    }
+    #cultura img {
+        width: 90px;
+        margin-left: 20px;
+    }
+    .section-button #conButton {
+        width: 120px;
+        height: 30px;
+        font-size: 1rem;
+        margin-top: 230px;
+    }
+    .contPuntos {
+        width: 60%;
+        height: 30px;
+        margin-top: -20px;
+        margin-left: 20%;
+        border-radius: 10px;
+    }
+    .contPuntos .puntos{
+        font-size: 1.3rem;
+    }
+}
