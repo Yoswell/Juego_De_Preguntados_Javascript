@@ -6,16 +6,21 @@
     <title>Javascript</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="Responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" 
+          crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Silkscreen&display=swap" 
+          rel="stylesheet">
 </head>
 <body>
+  <header class="header">
+    <div class="btn-menu">
+      <label class="button" id="button" for="btn-menu" onclick="removerPuntaje();">☰</label>
+    </div>
+    <h1>¿Preguntados, trivia?</h1>
+  </header>
     <section class="container" id="container">
-        <header class="header">
-            <div class="contain">
-              <div class="btn-menu">
-                  <label class="button" id="button" for="btn-menu" onclick="remove();">☰</label>
-              </div>
-            </div>
-        </header>
+      
         <input type="checkbox" id="btn-menu" class="menu">
           <div class="container-menu">
             <div class="cont-menu" id="cont-menu">
@@ -39,35 +44,14 @@
                         <img src="culturaGeneral.png" alt="">
                       </a>
                     </div>
-                    <div class="informacion">
-                      <h1>APRENDE A JUGAR <br>¡Bienvenido!</h1>
-                      <img src="ciencias.png" alt="">
-                      <div class="conInformacion">
-                        <p>Hola, bienvenido al juego de preguntados en esta parte tendras que elegir una de cuatro secciónes
-                        para poder comenzar con el juego, por cada sección te toparas con 11 preguntas diferentes que contienen
-                        una sola respuesta, las categorias son: Deportes, Cultura, Estudios y Ciencia. <br><br> Dentro del juego
-                        habra un contador de puntajes que se incrementara conforme aciertes tus respuestas y si las fallas, este
-                        no se movera.
-                        </p>
-                      </div>
-                    </div>
                  </nav>
               </div>
             </div>
           </div>
-          <div class="titulin">
+          <div class="titulin" id="titulin">
             <h1 id="conPregunta">PREGUNTADOS</h1>
           </div>
           <div class="contenido-seccion">
-            <div id="imagenes">
-              <img class="cien" src="ciencias.png" alt="">
-              <img class="estu" src="estudios.png" alt="">
-              <img class="mate" src="matematicas.png" alt="">
-           </div>
-            <div class="bienvenbida"></div>
-            <div class="section-button">
-              <button class="btn" id="conButton" onclick="remover();">Siguiente</h1>
-            </div>
             <div class="section-opciones" id="seccion-opciones">
               <button class="btn opcion1" id="op1" onclick="fallarUno();">
                 <strong>Respuesta 1</strong>
@@ -77,7 +61,12 @@
                 <strong>Respuesta 3</strong>
           </div>
         </div>
-        <div class="contPuntos"><h1 class="puntos">Puntos<span id="puntos"> 0</span></h1></div>
+        <div class="section-button">
+          <button class="btn" id="conButton" onclick="remover();">Siguiente</h1>
+        </div>
+        <div class="contPuntos" id="contPuntos">
+          <h1 class="puntos">Puntos<span id="puntos"> 0</span></h1>
+        </div>
     </section>
 </body>
     <script src="Index.js"></script>
