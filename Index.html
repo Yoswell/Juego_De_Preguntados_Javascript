@@ -13,43 +13,9 @@
           rel="stylesheet">
 </head>
 <body>
-  <header class="header">
-    <div class="btn-menu">
-      <label class="button" id="button" for="btn-menu" onclick="removerPuntaje();">☰</label>
-    </div>
-    <h1>¿Preguntados, trivia?</h1>
-  </header>
     <section class="container" id="container">
-      
-        <input type="checkbox" id="btn-menu" class="menu">
-          <div class="container-menu">
-            <div class="cont-menu" id="cont-menu">
-              <div class="l-navbar" id="nav-bar">
-                <nav class="nav">
-                  <div class="nav__list">
-                      <button href="#" class="nav__link ciencias" id="ciencias" onclick="ciencia();">
-                        <span class="nav__name">Ciencias</span>
-                        <img src="ciencias.png" alt="">
-                      </button>
-                      <button href="#" class="nav__link estudios" id="estudios" onclick="estudios();">
-                        <span class="nav__name">Estudios</span>
-                        <img src="estudios.png" alt="">
-                      </button>
-                      <a href="#" class="nav__link deportes" id="deportes" onclick="deportes();">
-                        <span class="nav__name">Deportes</span>
-                        <img src="matematicas.png" alt="">
-                      </a>
-                      <a href="#" class="nav__link culturaGeneral" id="cultura" onclick="cultura();">
-                        <span class="nav__name">Cultura</span>
-                        <img src="culturaGeneral.png" alt="">
-                      </a>
-                    </div>
-                 </nav>
-              </div>
-            </div>
-          </div>
           <div class="titulin" id="titulin">
-            <h1 id="conPregunta">PREGUNTADOS</h1>
+            <h1 id="conPregunta">Juego de Preguntados</h1>
           </div>
           <div class="contenido-seccion">
             <div class="section-opciones" id="seccion-opciones">
@@ -62,7 +28,8 @@
           </div>
         </div>
         <div class="section-button">
-          <button class="btn" id="conButton" onclick="remover();">Siguiente</h1>
+          <button class="btn" id="conButton" onclick="ciencia();">Siguiente</button>
+          <button class="btn" onclick="removerPuntaje();">Eliminar</button>
         </div>
         <div class="contPuntos" id="contPuntos">
           <h1 class="puntos">Puntos<span id="puntos"> 0</span></h1>
